@@ -9,6 +9,9 @@
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
 			<item value="green"/>
+			<item value="notFound"/>
+			<item value="not"/>
+			<item value="servlet"/>
 			<item value="junit"/>
 			<item value="spring-test"/>
 			<item value="plugin"/>

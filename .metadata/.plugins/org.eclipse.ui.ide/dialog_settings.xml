@@ -13,6 +13,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/BK/dev/spring/springbasic1027_1"/>
+			<item value="/Users/BK/dev/spring"/>
+			<item value="/Users/BK/dev/spring/spring1027"/>
+			<item value="/Users/BK/dev/spring/spring1027_1"/>
+			<item value="/Users/BK/dev/spring/Spring1027"/>
 			<item value="/Users/rlaqhrns/dev/spring/springbasic1027_1"/>
 			<item value="/Users/rlaqhrns/dev/spring/spring1027_1"/>
 		</list>

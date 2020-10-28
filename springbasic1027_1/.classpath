@@ -35,12 +35,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/rlaqhrns/dev/database/ojdbc8.jar">
+	<classpathentry kind="lib" path="/Users/BK/dev/database/lombok.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/rlaqhrns/dev/database/lombok.jar">
+	<classpathentry kind="lib" path="/Users/BK/dev/database/ojdbc8.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>

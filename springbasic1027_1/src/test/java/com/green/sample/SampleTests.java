@@ -27,7 +27,7 @@ public class SampleTests {
 		//assertNotNull(restaurant); //not null이면 통과라는 뜻 (assert)
 		 
 		log.info(restaurant); 
-		// 예외가 발생하지 않으면 통과됨 
+		//예외가 발생하지 않으면 통과됨 
 		log.info("---------------------------");
 		log.info(restaurant.getChef());
 	}
