@@ -5,9 +5,16 @@
   <mapper namespace="com.green.mapper.BoardMapper">
   	<select id = "getList" resultType="com.green.domain.BoardVO">
   		<![CDATA[ 
-  			select * from tbl_board where bno>0
+  			select * from tbl_board where bno > 0
   		]]>
   	</select>
+  	
+  	
+
+	<update id="update">
+		update tbl_board set title=#{title} where bno = #{bno}
+	</update>
+
   	
   	<insert id="insert"	>
   		insert into tbl_board(bno, title, content, writer)
@@ -17,9 +24,15 @@
   		<selectKey keyProperty="bno" order="BEFORE" resultType="Long">
   			select seq_board.nextval from dual
   		</selectKey>
-  		insert into tbl_board(bno, title, content, writer)
-  			values(seq_board.nextval, #{title}, #{content}, #{writer})
+  			insert into tbl_board(bno, title, content, writer)
+  				values(seq_board.nextval, #{title}, #{content}, #{writer})
   	</insert>
   	<select id="read" resultType="com.green.domain.BoardVO">
-  		select * from tbl_board where bno = #{bno}</select>
+  		select * from tbl_board where bno = #{bno}
+  	</select>
+  	<delete id="delete">
+        delete from tbl_board where bno = #{bno}
+    </delete>
   </mapper>
+  
+  

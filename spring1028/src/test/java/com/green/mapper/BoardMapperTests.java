@@ -18,12 +18,14 @@ public class BoardMapperTests {
 	@Setter(onMethod_=@Autowired) //DI(의존주입)
 	private BoardMapper mapper;
 	
-	@Test
+	
+	//@Test
 	public void testGetList() {
 		mapper.getList().forEach(i -> log.info(i));
 	}
 	
-	@Test
+	
+	//@Test
 	public void testInsert() {
 		for(int i = 0; i<5; i++) {
 			
@@ -35,7 +37,7 @@ public class BoardMapperTests {
 			log.info(board);
 		}
 	}
-	@Test
+	//@Test
 	public void testInsertKey() { //콘솔창 확인, 교재 읽기!!
 		BoardVO board = new BoardVO();
 		board.setTitle("새로 작성하는 글 select key");
@@ -44,10 +46,27 @@ public class BoardMapperTests {
 		mapper.insert(board);
 		log.info(board);
 	}
-	@Test
+	//@Test
 	public void testRead() {
 		//존재하는 id값을 주세
 		BoardVO board = mapper.read(5L);
 		log.info("하나만 읽은 데이터"+ board);
+	}
+	@Test
+	public void testUpdate() {
+		BoardVO boardUpdate = new BoardVO();
+		boardUpdate.setTitle("spring");
+		boardUpdate.setBno(46L);
+		mapper.update(boardUpdate);
+		log.info(boardUpdate);
+		
+		
+		
+	}
+	//@Test
+	public void testDelete() {
+		//존재하는 id값을 주세
+		mapper.delete(5L);
+		
 	}
 }

@@ -1,4 +1,4 @@
-package com.green.test;
+package com.green;
 
 import com.green.test.domain.Expense;
 import com.green.test.domain.ExpensiveRepository;

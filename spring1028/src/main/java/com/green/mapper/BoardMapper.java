@@ -17,5 +17,6 @@ public interface BoardMapper {
 	//어노테이션을 이용하여 @SelectKey는 PK값을 미리(before) SQL을 통해서 처리해두고
 	//특정한 이름으로 결과를 보관하는 방식
 	public BoardVO read(Long bno); //방금전에 한 selectKey의 query문이 같음
+	public BoardVO update(BoardVO board);
 	public int delete(Long bno);
 }
