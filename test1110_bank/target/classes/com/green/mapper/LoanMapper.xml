@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.green.mapper.LoanMapper">
+  	
+  	<select id="getLoan" resultType="com.green.vo.LoanVO">
+  		<![CDATA[ 
+  			select * from loan where lo_id = #{lo_id}
+  		]]>
+  	</select>
+
+  	<insert id="insertLoan">
+  		insert into loan(lo_id, lo_name)
+    		values( #{lo_id}, #{lo_name})
+  	</insert>
+  	
+  	<update id="loan">
+  		update loan set lo_total = (lo_total + #{lo_withdraw} ), lo_withdraw = #{lo_withdraw},
+  		 				lo_balance = (lo_balance - #{lo_withdraw}) where lo_id = #{lo_id}
+  							 
+  	</update>
+  	<update id="updateBalance">
+  		update loan set lo_balance = #{lo_balance} where lo_id = #{lo_id}
+  							 
+  	</update>
+  	<update id="updateName">
+  		update loan set lo_name = #{lo_name} where lo_id = #{lo_id}
+  							 
+  	</update>
+  	<delete id="delete">
+  		delete from loan where lo_id = #{lo_id}
+  	</delete>
+  	
+  	
+  </mapper>
